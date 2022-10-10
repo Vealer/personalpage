@@ -5,22 +5,23 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './product-list/product-list.component';
 import { StartComponent } from './start/start.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      { path: '', component: StartComponent },
+      { path: 'projects', component: ProjectsComponent },
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent,
-    StartComponent
+    StartComponent,
+    ProjectsComponent
   ],
   bootstrap: [
     AppComponent
