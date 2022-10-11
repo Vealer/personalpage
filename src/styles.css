@@ -10,7 +10,8 @@
 
 body {
   margin: 0;
-  background: linear-gradient(135deg, rgb(67, 67, 156), rgb(16, 16, 83));
+  /*background: linear-gradient(135deg, rgb(67, 67, 156), rgb(16, 16, 83));*/
+  background-image: radial-gradient(100% 106% at 52% 129%, #FFFFFF 0, #000353 100%);
 }
 
 .container {

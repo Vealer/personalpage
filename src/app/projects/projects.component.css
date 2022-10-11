@@ -8,6 +8,7 @@
   justify-content: flex-start;
   border-top: 1px solid white;
 }
+
 h1{
   align-self: flex-start;
   margin-left: 50px;
@@ -25,23 +26,30 @@ h1{
   height: 300px;
   width: 300px;
   background: black;
-  box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: rgb(135, 143, 150) 0px 20px 30px -10px;
+  animation: bounce 2s ease-in-out;
+  transition: opacity 0.7s ease-out, transform 0.7s,
+
 }
 
 .red{
-  border-top: 2px solid red;
+  border-top: 4px solid red;
+  border-bottom: 4px solid red;
 }
 
 .blue{
-  border-top: 2px solid rgb(38, 137, 194);
+  border-top: 4px solid rgb(38, 137, 194);
+  border-bottom: 4px solid rgb(38, 137, 194);
 }
 
 .green{
-  border-top: 2px solid green;
+  border-top: 4px solid green;
+  border-bottom: 4px solid green;
 }
 
 .orange{
-  border-top: 2px solid orange;
+  border-top: 4px solid orange;
+  border-bottom: 4px solid orange;
 }
 
 .red-color{
@@ -52,14 +60,19 @@ h1{
 }
 
 .green-color{
-  color: green;
+  color: rgb(35, 175, 35);
 }
 
 .orange-color{
-  color: orange;
+  color: rgb(194, 149, 65);
 }
 
 p{
   text-align: center;
 }
 
+@keyframes bounce{
+  0%{
+    transform: translateY(15px);
+  }
+}
