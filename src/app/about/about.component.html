@@ -1,11 +1,18 @@
 <section class="about" id="about">
   <h1>About Me</h1>
-  <div>
+  <div class="aboutMe">
     <img class="profil" src="/assets/js.png" >
     <p>
       In April 2022, I decided to use my interest in the IT sector
-      professionally. So I started further training at the Developer Academy.
+      professionally.<br> So I started further training at the Developer Academy.<br>
       I'm working hard to make my dream come true, to turn my hobby into a job.
     </p>
+  </div>
+  <div class="journey">
+    <div class="" *ngFor='let element of journey'>
+    <img [src]="element.src" >
+    <h5>{{ element.title.toUpperCase() }}</h5>
+    <span>{{ element.text }}</span>
+    </div> 
   </div>
 </section>
