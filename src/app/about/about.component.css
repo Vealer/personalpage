@@ -8,6 +8,26 @@
   justify-content: flex-start;
   border-top: 1px solid white;
 }
+.about div{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  gap: 60px
+}
+
+p{
+  margin-bottom: 0;
+}
+
+
+.profil{
+  height: 82px;
+  width: 82px;
+  border-radius: 50%;
+  background-color: white;
+}
+
 
 h1{
   align-self: flex-start;
