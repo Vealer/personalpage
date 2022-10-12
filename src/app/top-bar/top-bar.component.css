@@ -1,7 +1,21 @@
+nav{
+  z-index: 100;
+  width: 100%;
+  background-color: #215b94;
+  background: linear-gradient( rgb(67, 67, 156), rgb(16, 16, 83) );
+  padding: 16px;
+  position: fixed;
+  color: white !important;
+}
 
 
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
+.navbar-light .navbar-toggler {
+    color: rgba(255,255,255,.55);
+    border: 1px solid;
+    border-color: rgba(255,255,255,.1);
+    background: rgba(189, 193, 201, 0.2);
+}
+
+a{
+  color: unset !important;
+}

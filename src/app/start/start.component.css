@@ -1,5 +1,5 @@
 .start{
-  height: 90vh;
+  height: 100vh;
   width: 95vw;
   margin: 0;
   color: white;
@@ -27,8 +27,8 @@ h6{
 
 .scroll-down {
   position: absolute;
-  right: 20px;
-  bottom: 2rem;
+  right: 5px;
+  bottom: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
