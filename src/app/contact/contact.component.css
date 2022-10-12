@@ -20,6 +20,8 @@ form{
   background: rgba(93, 58, 133, 0.3);
   padding: 50px;
   box-sizing: border-box;
+  border-radius: 10px;
+  height: 460px;
 }
 
 form div{
@@ -39,7 +41,9 @@ h1{
   color: white;
 }
 
-
+.subject{
+  width: 100%;
+}
 
 .message{
   width: 100%;
