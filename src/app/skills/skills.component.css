@@ -4,8 +4,8 @@
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
-  border-top: 1px solid white;
   margin-bottom: 50px;
+  border-top: 1px solid white;
 }
 
 h1 {
@@ -13,6 +13,7 @@ h1 {
   margin-left: 50px;
   margin-top: 70px;
   color: white;
+
 }
 
 .cards{
