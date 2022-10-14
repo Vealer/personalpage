@@ -19,6 +19,9 @@ nav{
 a{
   color: unset !important;
 }
+a:hover{
+  transition: all 1s ease-in-out !important;
+}
 
 img{
   height: 64px;

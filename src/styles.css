@@ -53,6 +53,8 @@ a {
   cursor: pointer;
   text-decoration: none !important;
   color: #211957 !important;
+  border-bottom: transparent;
+  transition: all 0.01s ease-in-out !important;
 }
 
 a:hover {
