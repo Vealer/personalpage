@@ -1,22 +1,21 @@
 /* Global Styles */
-
 @font-face {
   font-family: Raleway;
-  src: url('../fonts/Raleway/Raleway-VariableFont_wght.ttf');
+  src: url('/assets/fonts/Raleway-VariableFont_wght.ttf');
 }
 
 @font-face {
   font-family: Indie;
-  src: url('../fonts/IndieFlower-Regular.ttf');
+  src: url('/assets/fonts/IndieFlower-Regular.ttf');
 }
 
 @font-face {
   font-family: Ubuntu;
-  src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf')
+  src: url('/assets/fonts/Ubuntu-Regular.ttf')
 }
 
 * {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Ubuntu', Arial, sans-serif;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
