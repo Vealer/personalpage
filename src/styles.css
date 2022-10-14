@@ -11,11 +11,11 @@
 
 @font-face {
   font-family: Ubuntu;
-  src: url('/assets/fonts/Ubuntu-Regular.ttf')
+  src: url('/assets/fonts/Ubuntu-Regular.ttf');
 }
 
 * {
-  font-family: 'Ubuntu', Arial, sans-serif;
+  font-family: 'Ubuntu', 'Indie' Arial, sans-serif;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

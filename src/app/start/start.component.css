@@ -6,6 +6,7 @@
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
+  font-family: 'Indie' !important;
 }
 
 h1{
