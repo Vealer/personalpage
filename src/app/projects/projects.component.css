@@ -6,12 +6,13 @@
   justify-content: flex-start;
   border-top: 1px solid white;
   margin-bottom: 50px;
+  min-height: 100vh;
 }
 
 h1{
   align-self: flex-start;
   margin-left: 50px;
-  margin-top: 70px;
+  margin-top: 80px;
   color: white;
 }
 
