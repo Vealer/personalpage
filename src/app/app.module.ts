@@ -16,8 +16,6 @@ import { SkillsComponent } from './skills/skills.component';
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: StartComponent },
-      { path: 'projects', component: ProjectsComponent },
     ])
   ],
   declarations: [
