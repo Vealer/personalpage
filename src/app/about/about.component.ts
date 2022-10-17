@@ -22,7 +22,7 @@ export class AboutComponent implements OnInit {
       title: 'Become pleasures',
       titel: 'Interesse erwachte',
       english: 'I really enjoy developing software. For this reason I want to turn my hobby into my profession.',
-      deutsch: 'Mein Interesse an Softwareentwicklung erwachte. Mir wurde klar, dass ich mehr wollte.',
+      deutsch: 'Mein Interesse an Software-Entwicklung erwachte. Mir wurde klar, dass ich mehr wollte.',
     },
     {
       src: 'assets/lupe.png',
@@ -34,7 +34,7 @@ export class AboutComponent implements OnInit {
     {
       src: 'assets/takeoff.png',
       title: 'Ready to takeoff',
-      titel: 'Bereit durchzustarten',
+      titel: 'Bereit zu starten',
       english: 'I am now looking for new challenges to work as a Front End developer or build software with JavaScript.',
       deutsch: 'Ich suche jetzt nach neuen Herausforderungen, um als Frontend-Entwickler zu arbeiten oder Software mit JavaScript zu erstellen.',
     },
