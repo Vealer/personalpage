@@ -1,18 +1,20 @@
 <section class="about" id="about">
-  <h1>About Me</h1>
+  <h1>{{ text1 }}</h1>
   <div class="aboutMe">
-    <img class="profil" src="/assets/js.png" >
+    <img class="profil" src="/assets/js.png" />
     <p>
-      In April 2022, I decided to use my interest in the IT sector
-      professionally.<br> So I started further training at the Developer Academy.<br>
-      I'm working hard to make my dream come true, to turn my hobby into a job.
+      {{ text2 }}
     </p>
   </div>
   <div class="journey">
-    <div class="" *ngFor='let element of journey'>
-    <img [src]="element.src" >
-    <h5>{{ element.title.toUpperCase() }}</h5>
-    <span>{{ element.text }}</span>
-    </div> 
+    <div *ngFor="let element of journey">
+      <img [src]="element.src" />
+      <h5>
+        {{ english ? element.title.toUpperCase() : element.titel.toUpperCase() }}
+      </h5>
+      <span>
+        {{ english ? element.english : element.deutsch }}
+      </span>
+    </div>
   </div>
 </section>
