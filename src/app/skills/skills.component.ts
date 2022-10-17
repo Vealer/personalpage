@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
@@ -10,7 +10,23 @@ export class SkillsComponent implements OnInit {
 
   constructor() { }
 
+  @Input()
+  english: boolean = false;
+
+
+
   ngOnInit(): void {
+  }
+
+  text1: string = 'Meine Erfahrungen';
+
+  changeText() {
+    let en: boolean = this.english;
+    this.text1 = en ? `My Skills` : `Meine Erfahrungen`;
+  }
+
+  ngOnChanges() {
+    this.changeText();
   }
 
 }

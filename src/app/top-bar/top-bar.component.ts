@@ -21,7 +21,7 @@ export class TopBarComponent {
     let en: boolean = this.english;
     this.text = en ? 'English' : 'Deutsch';
     this.aboutme = en ? 'About Me' : 'Über mich';
-    this.skills = en ? 'Skills' : 'Fähigkeiten';
+    this.skills = en ? 'Skills' : 'Erfahrungen';
     this.contact = en ? 'Contact me' : 'Kontakt';
   }
 
