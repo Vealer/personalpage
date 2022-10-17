@@ -15,7 +15,7 @@ export class AboutComponent implements OnInit {
       title: 'The JOURNEY began',
       titel: 'Die Reise began',
       english: 'I started programming as a hobby a few years ago and I still enjoy programming immensely.',
-      deutsch: 'Vor ein paar Jahren fing ich mit dem programmieren als Hobby an.',
+      deutsch: 'Vor ein paar Jahren fing ich mit dem programmieren als Hobby an. Bis heute programmiere ich sehr gerne.',
     },
     {
       src: 'assets/heart.png',
@@ -34,7 +34,7 @@ export class AboutComponent implements OnInit {
     {
       src: 'assets/takeoff.png',
       title: 'Ready to takeoff',
-      titel: 'Fertig zum Durchstarten',
+      titel: 'Bereit durchzustarten',
       english: 'I am now looking for new challenges to work as a Front End developer or build software with JavaScript.',
       deutsch: 'Ich suche jetzt nach neuen Herausforderungen, um als Frontend-Entwickler zu arbeiten oder Software mit JavaScript zu erstellen.',
     },

@@ -1,4 +1,4 @@
-.about{
+.about {
   color: white;
   display: flex;
   align-items: center;
@@ -8,26 +8,31 @@
   margin-bottom: 50px;
   min-height: 100vh;
 }
-.aboutMe{
+.aboutMe {
   margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 80%;
-  gap: 70px
+  gap: 70px;
 }
 
-.journey{
+.journey {
   margin-top: 100px;
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
   gap: 30px;
-  width: 80%;
   text-align: center;
+  width: 80%;
 }
 
-.journey img{
+.journey div{
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.journey img {
   background-color: white;
   height: 92px;
   width: 92px;
@@ -36,45 +41,47 @@
   margin-bottom: 25px;
 }
 
-span{
+span {
   margin-top: 100px;
 }
 
-p{
+p {
   margin-bottom: 0;
+  font-size: 20px;
 }
 
-
-.profil{
+.profil {
   height: 200px;
   width: 200px;
   border-radius: 50%;
   background-color: white;
 }
 
-
-h1{
+h1 {
   align-self: flex-start;
   margin-top: 80px;
   margin-left: 50px;
   color: white;
 }
 
-@media screen and ( max-width: 992px){
-  .aboutMe{
-    flex-direction: column;
-    align-content: center;
-    gap: 30px
-  }
-
+h5 {
+  color: lightblue;
+  height: 50px;
 }
 
-@media screen and ( max-width: 800px){
+@media screen and (max-width: 992px) {
+  .aboutMe {
+    flex-direction: column;
+    align-content: center;
+    gap: 30px;
+    text-align: center;
+  }
+}
 
-  .journey{
+@media screen and (max-width: 800px) {
+  .journey {
     margin-top: 50px;
     flex-direction: column;
     gap: 50px;
-
   }
 }
