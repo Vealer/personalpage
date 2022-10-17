@@ -53,7 +53,7 @@ export class AboutComponent implements OnInit {
       ? `In April 2022, I decided to use my interest in the IT sector
     professionally. So I started further training at the Developer Academy. 
     I'm working hard to make my dream come true, to turn my hobby into a job.`
-      : `Im April 2022 began ich mein Interesse an der IT zu vertiefen. Deswegen habe ich eine privat eine Weiterbildung zum Webentwickler an der Developer Academy begonnen. 
+      : `Im April 2022 began ich mein Interesse an der IT zu vertiefen. Deswegen habe ich privat eine Weiterbildung zum Webentwickler an der Developer Academy begonnen. 
     Ich arbeite regelmäßig daran, meinen Traum zu verwirklichen und mein Hobby zum Beruf zu machen.`;
   }
 
