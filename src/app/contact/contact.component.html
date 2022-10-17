@@ -1,10 +1,10 @@
 <section class="contact" id="contact">
-  <h1>Contact me</h1>
-  <p>Get in touch via the form below, or by emailing <a href="mailto:valer.neufeld@gmx.de">valer.neufeld@gmx.de</a></p>
+  <h1>{{ text1 }}</h1>
+  <p> {{ text2 }} <a href="mailto:valer.neufeld@gmx.de"> valer.neufeld@gmx.de</a></p>
   <form>
     <input type="text" pattern="[a-zA-Z]{5}" placeholder="Name*" pattern="[a-zA-Z]{2}"  required/>
     <input class="email" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email*" required/>
-    <textarea class="message" type="textarea" placeholder="Message*" required></textarea>
-    <button type="submit"><span class="text">Send message</span></button>
+    <textarea class="message" type="textarea" placeholder="{{ text3 }}*" required></textarea>
+    <button type="submit"><span class="text">{{ text4 }}</span></button>
   </form>
 </section>
