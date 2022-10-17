@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-top-bar',
@@ -7,23 +7,28 @@ import { Component } from '@angular/core';
 })
 export class TopBarComponent {
   constructor( ) { 
-    this.change();
+    this.changeText();
   }
 
-  english: boolean = true;
+  @Input() english: boolean = false;
+
   aboutme: string = '';
   skills: string = '';
   contact: string = '';
   text: string = '';
 
-  change() {
-    this.english = !this.english;
+  changeText() {
     let en: boolean = this.english;
     this.text = en ? 'English' : 'Deutsch';
     this.aboutme = en ? 'About Me' : 'Über mich';
     this.skills = en ? 'Skills' : 'Fähigkeiten';
     this.contact = en ? 'Contact me' : 'Kontakt';
   }
+
+  ngOnChanges() {
+    this.changeText();
+  }
+
 }
 
 /*
