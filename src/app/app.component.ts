@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public english: boolean = false;
-  text: string = 'Deutsch';
+  text: string = 'English';
 
   change() {
     this.english = !this.english;
     let en: boolean = this.english;
-    this.text = en ? 'English' : 'Deutsch';
+    this.text = en ? 'Deutsch' : 'English';
   }
 }
