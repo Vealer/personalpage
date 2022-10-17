@@ -18,7 +18,7 @@ export class SkillsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  text1: string = 'Meine Erfahrungen';
+  text1: string = '';
 
   changeText() {
     let en: boolean = this.english;

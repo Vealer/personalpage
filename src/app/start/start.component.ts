@@ -19,6 +19,7 @@ export class StartComponent implements OnInit {
   text2: string = '';
   text3: string = '';
   text4: string = '';
+  text5: string = '';
 
   changeText() {
     let en: boolean = this.english;
@@ -26,7 +27,7 @@ export class StartComponent implements OnInit {
     this.text2 = en ? `a w` : `ein W`;
     this.text3 = en ? `develop` : `Entwickl`;
     this.text4 = en ? `Frontend developer` : `Frontend Entwickler`;
-    
+    this.text5 = en ? `Scroll down!` : `runterscrollen`;
   }
 
   ngOnChanges() {

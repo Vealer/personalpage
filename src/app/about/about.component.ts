@@ -39,9 +39,7 @@ export class AboutComponent implements OnInit {
       deutsch: 'Ich suche jetzt nach neuen Herausforderungen, um als Frontend-Entwickler zu arbeiten oder Software mit JavaScript zu erstellen.',
     },
   ];
-  constructor() {
-    this.changeText();
-  }
+  constructor() {}
 
   @Input()
   english: boolean = false;

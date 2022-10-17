@@ -6,9 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./top-bar.component.css'],
 })
 export class TopBarComponent {
-  constructor( ) { 
-    this.changeText();
-  }
+  constructor( ) {}
 
   @Input() english: boolean = false;
 
