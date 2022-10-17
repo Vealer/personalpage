@@ -11,28 +11,28 @@ export class AboutComponent implements OnInit {
 
   journey = [
     {
-      src: '/assets/walking.png',
+      src: 'assets/walking.png',
       title: 'The JOURNEY began',
       titel: 'Die Reise began',
       english: 'I started programming as a hobby a few years ago and I still enjoy programming immensely.',
       deutsch: 'Vor ein paar Jahren fing ich mit dem programmieren als Hobby an.',
     },
     {
-      src: '/assets/heart.png',
+      src: 'assets/heart.png',
       title: 'Become pleasures',
       titel: 'Interesse erwachte',
       english: 'I really enjoy developing software. For this reason I want to turn my hobby into my profession.',
       deutsch: 'Mein Interesse an Softwareentwicklung erwachte. Mir wurde klar, dass ich mehr wollte.',
     },
     {
-      src: '/assets/lupe.png',
+      src: 'assets/lupe.png',
       title: 'Search for more',
       titel: 'Suche nach mehr',
       english: 'I realized I wanted more. I wanted to turn my hobby into my job. So I went looking and found the Developer Academy.',
       deutsch: ' Ich wollte mein Hobby zum Beruf machen. Also habe ich mich auf die Suche gemacht und die Developer Academy gefunden.',
     },
     {
-      src: '/assets/takeoff.png',
+      src: 'assets/takeoff.png',
       title: 'Ready to takeoff',
       titel: 'Fertig zum Durchstarten',
       english: 'I am now looking for new challenges to work as a Front End developer or build software with JavaScript.',
