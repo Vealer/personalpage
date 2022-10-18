@@ -10,6 +10,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
+import { FooterComponent } from './footer/footer.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
   imports: [
@@ -25,7 +27,9 @@ import { SkillsComponent } from './skills/skills.component';
     ProjectsComponent,
     AboutComponent,
     ContactComponent,
-    SkillsComponent
+    SkillsComponent,
+    FooterComponent,
+    PrivacyComponent
   ],
   bootstrap: [
     AppComponent
