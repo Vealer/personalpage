@@ -7,7 +7,6 @@ import { DataService } from '../data.service';
   styleUrls: ['./start.component.css'],
 })
 export class StartComponent implements OnInit {
-  @Input()
   english: boolean = false;
 
   constructor(private dataService: DataService) {
@@ -29,14 +28,10 @@ export class StartComponent implements OnInit {
     this.text5 = en ? `Scroll down!` : `runterscrollen`;
   }
 
-  ngOnChanges() {
-    this.changeText();
-  }
-
   ngOnInit() {
     this.dataService
       .langChanged
-      .subscribe(updated => {
+      .subscribe(() => {
         this.english = this.dataService.get();
         this.changeText();
       });

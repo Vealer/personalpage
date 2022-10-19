@@ -7,8 +7,10 @@ import { DataService } from '../data.service';
   styleUrls: ['./top-bar.component.css'],
 })
 export class TopBarComponent implements OnInit {
-  
-  constructor(private dataService: DataService ) {}
+
+  constructor(private dataService: DataService ) {
+    this.changeText();
+  }
 
   english: boolean = false;
   aboutme: string = '';
@@ -29,7 +31,6 @@ export class TopBarComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.changeText();
     this.dataService
       .langChanged
       .subscribe(() => {

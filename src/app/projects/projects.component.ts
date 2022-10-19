@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-projects',
@@ -6,14 +7,19 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-
-  @Input()
   english: boolean = false;
 
+  constructor(private dataService: DataService) { 
+    this.changeText();
+  }
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit() {
+    this.dataService
+      .langChanged
+      .subscribe(() => {
+        this.english = this.dataService.get();
+        this.changeText();
+      });
   }
 
   text1: string = '';

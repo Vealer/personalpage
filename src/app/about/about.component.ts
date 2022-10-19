@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-about',
@@ -8,6 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class AboutComponent implements OnInit {
   text1: string = '';
   text2: string = '';
+  english: boolean = false;
 
   journey = [
     {
@@ -39,12 +41,22 @@ export class AboutComponent implements OnInit {
       deutsch: 'Ich suche jetzt nach neuen Herausforderungen, um als Frontend-Entwickler zu arbeiten oder Software mit JavaScript zu erstellen.',
     },
   ];
-  constructor() {}
 
-  @Input()
-  english: boolean = false;
+  constructor(private dataService: DataService) { 
+    this.changeText();
+  }
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    this.dataService
+      .langChanged
+      .subscribe(() => {
+        this.english = this.dataService.get();
+        this.changeText();
+      });
+  }
+
+
+
 
   changeText() {
     let en: boolean = this.english;
