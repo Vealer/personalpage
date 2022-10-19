@@ -27,3 +27,7 @@ a:hover{
 img{
   height: 64px;
 }
+
+button{
+  background-color: rgb(16, 16, 83);
+}
