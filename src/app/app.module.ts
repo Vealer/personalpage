@@ -19,7 +19,9 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      {path:'', component: HomeComponent}
+      {path:'', component: HomeComponent},
+      {path:'privacy', component: PrivacyComponent}
+
     ])
   ],
   declarations: [

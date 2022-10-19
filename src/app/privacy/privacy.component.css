@@ -1,0 +1,16 @@
+.margin-top{
+  margin-top: 100px;
+}
+
+.privacy{
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
