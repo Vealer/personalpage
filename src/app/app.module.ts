@@ -13,6 +13,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { FooterComponent } from './footer/footer.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { HomeComponent } from './home/home.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { HomeComponent } from './home/home.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       {path:'', component: HomeComponent},
-      {path:'privacy', component: PrivacyComponent}
+      {path:'privacy', component: PrivacyComponent},
+      {path:'impressum', component: ImpressumComponent}
 
     ])
   ],
@@ -34,7 +36,8 @@ import { HomeComponent } from './home/home.component';
     SkillsComponent,
     FooterComponent,
     PrivacyComponent,
-    HomeComponent
+    HomeComponent,
+    ImpressumComponent
   ],
   bootstrap: [
     AppComponent
