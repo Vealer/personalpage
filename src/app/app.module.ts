@@ -12,12 +12,14 @@ import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import { FooterComponent } from './footer/footer.component';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
+      {path:'', component: HomeComponent}
     ])
   ],
   declarations: [
@@ -29,7 +31,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
     ContactComponent,
     SkillsComponent,
     FooterComponent,
-    PrivacyComponent
+    PrivacyComponent,
+    HomeComponent
   ],
   bootstrap: [
     AppComponent
