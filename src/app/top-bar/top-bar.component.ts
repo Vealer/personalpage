@@ -1,15 +1,16 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-top-bar',
   templateUrl: './top-bar.component.html',
   styleUrls: ['./top-bar.component.css'],
 })
-export class TopBarComponent {
-  constructor( ) {}
+export class TopBarComponent implements OnInit {
+  
+  constructor(private dataService: DataService ) {}
 
-  @Input() english: boolean = false;
-
+  english: boolean = false;
   aboutme: string = '';
   skills: string = '';
   contact: string = '';
@@ -23,14 +24,17 @@ export class TopBarComponent {
     this.contact = en ? 'Contact me' : 'Kontakt';
   }
 
-  ngOnChanges() {
-    this.changeText();
+  change(){
+    this.dataService.change();
   }
 
+  ngOnInit() {
+    this.changeText();
+    this.dataService
+      .langChanged
+      .subscribe(() => {
+        this.english = this.dataService.get();
+        this.changeText();
+      });
+  }
 }
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/

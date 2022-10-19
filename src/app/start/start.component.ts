@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-start',
@@ -9,11 +10,9 @@ export class StartComponent implements OnInit {
   @Input()
   english: boolean = false;
 
-  constructor() {
+  constructor(private dataService: DataService) {
     this.changeText();
   }
-
-  ngOnInit(): void {}
 
   text1: string = '';
   text2: string = '';
@@ -32,5 +31,14 @@ export class StartComponent implements OnInit {
 
   ngOnChanges() {
     this.changeText();
+  }
+
+  ngOnInit() {
+    this.dataService
+      .langChanged
+      .subscribe(updated => {
+        this.english = this.dataService.get();
+        this.changeText();
+      });
   }
 }
