@@ -34,7 +34,7 @@ export class ProjectsComponent implements OnInit {
     this.text2 = en ? `A jump & run game` : `Ein jump & run Spiel`;
     this.text3 = en ? `A canban group project` : `Eine Kanban Gruppenarbeit`;
     this.text4 = en ? `A socialmedia clone` : `Eine Instagram Kopie`;
-    this.text5 = en ? `A game, written with Angular` : `Ein Kartenspiel mit Angular geschrieben`;
+    this.text5 = en ? `A game, written with Angular` : `Ein Kartenspiel in Angular`;
     
   }
 

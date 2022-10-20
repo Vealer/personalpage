@@ -41,13 +41,13 @@ h1{
 }
 
 .blue{
-  border-top: 4px solid rgb(38, 137, 194);
-  border-bottom: 4px solid rgb(38, 137, 194);
+  border-top: 4px solid rgb(15, 69, 216);
+  border-bottom: 4px solid rgb(15, 69, 216);
 }
 
 .green{
-  border-top: 4px solid green;
-  border-bottom: 4px solid green;
+  border-top: 4px solid rgb(68, 101, 141);
+  border-bottom: 4px solid rgb(68, 101, 141);
 }
 
 .orange{
@@ -59,15 +59,24 @@ h1{
   color: red;
 }
 .blue-color{
-  color: rgb(38, 137, 194);;
+  color: rgb(15, 69, 216);
 }
 
 .green-color{
-  color: rgb(35, 175, 35);
+  color: rgb(68, 101, 141);
 }
 
 .orange-color{
   color: rgb(194, 149, 65);
+}
+
+img{
+  height: 150px;
+  object-fit: cover;
+  margin-top: 30px;
+}
+a:hover{
+  border-bottom: none;
 }
 
 p{
