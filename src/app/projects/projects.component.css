@@ -7,6 +7,9 @@
   border-top: 1px solid white;
   margin-bottom: 50px;
   min-height: 100vh;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1{
@@ -28,7 +31,7 @@ h1{
 .card{
   height: 300px;
   width: 350px;
-  background: rgba(241, 236, 236, 0.8);
+  background: rgba(241, 236, 236, 0.9);
   box-shadow: rgb(135, 143, 150) 0px 20px 30px -10px;
   animation: bounce 2s ease-in-out;
 }
@@ -61,7 +64,7 @@ h1{
 }
 
 .orange-color{
-  color: rgb(194, 149, 65);
+  color: rgb(192, 138, 21);
 }
 
 img{
