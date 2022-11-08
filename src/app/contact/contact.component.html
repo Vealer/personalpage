@@ -4,19 +4,6 @@
     {{ text2 }} <a href="mailto:valer.neufeld@gmx.de"> valer.neufeld@gmx.de</a>
   </p>
 
-  <!-- <form>
-  <div class="form-group">
-    <input type="text" maxlength="10" minlength="2" placeholder="Name*" class="form-control" id="name"  />
-  </div>
-  <div class="form-group">
-    <input class="email" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email*" class="form-control" id="email"  required/>
-  </div> 
-  <div class="form-group">
-    <textarea class="message" type="textarea" placeholder="{{ text3 }}*" class="form-control" id="message"  required></textarea>
-  </div>
-    <button type="submit"><span class="text">{{ text4 }}</span></button>
-  </form> -->
-
   <div class="register-form">
     <form [formGroup]="form" (ngSubmit)="onSubmit()">
       <div class="form-group">
