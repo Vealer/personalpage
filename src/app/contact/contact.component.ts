@@ -52,7 +52,6 @@ export class ContactComponent implements OnInit {
           email: ['', Validators.compose([
             Validators.required,
             Validators.pattern("[a-z0-9._%+-]+@[a-z0-9.-]+[\.]([a-z]){2,4}$")])],
-          acceptTerms: [false, Validators.requiredTrue]
         },
       );
   }
@@ -63,12 +62,14 @@ export class ContactComponent implements OnInit {
 
   onSubmit(): void {
     this.submitted = true;
+    console.log('Fertig');
 
     if (this.form.invalid) {
       return;
     }
 
     console.log(JSON.stringify(this.form.value, null, 2));
+    console.log(this.form.value.message);
   }
 
   onReset(): void {
