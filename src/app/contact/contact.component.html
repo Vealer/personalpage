@@ -47,14 +47,14 @@
           formControlName="message"
           class="form-control"
           [ngClass]="{ 'is-invalid': submitted && f['message'].errors }"
-        >
+        ></textarea>
     <div *ngIf="submitted && f['message'].errors" class="invalid-feedback">
       <div *ngIf="f['message'].errors['required'] && english">Message is required</div>
       <div *ngIf="f['message'].errors['required'] && !english">Dieses Feld muss gefüllt sein</div>
       <div *ngIf="f['message'].errors['minlength'] && english">Message must be at least 6 characters</div>
       <div *ngIf="f['message'].errors['minlength'] && !english">Gib mindestens 6 Zeichen ein</div>
     </div>
-    </textarea>
+    
       </div>
 
       <div class="form-group">

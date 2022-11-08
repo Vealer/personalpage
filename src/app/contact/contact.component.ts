@@ -17,12 +17,9 @@ export class ContactComponent implements OnInit {
   submitted = false;
 
   form: FormGroup = new FormGroup({
-    fullname: new FormControl(''),
+    message: new FormControl(''),
     username: new FormControl(''),
     email: new FormControl(''),
-    password: new FormControl(''),
-    confirmPassword: new FormControl(''),
-    acceptTerms: new FormControl(false),
   });
 
 
