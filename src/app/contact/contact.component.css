@@ -16,11 +16,11 @@ form{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 60%;
   gap: 10px;
   color: black !important;
   background: rgba(93, 58, 133, 0.3);
   padding: 30px;
+  margin-left: 15px;
   box-sizing: border-box;
   border-radius: 10px;
 }
