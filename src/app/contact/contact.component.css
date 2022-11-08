@@ -17,14 +17,12 @@ form{
   flex-direction: column;
   flex-wrap: wrap;
   width: 60%;
-  max-width: 500px;
   gap: 10px;
   color: black !important;
   background: rgba(93, 58, 133, 0.3);
   padding: 30px;
   box-sizing: border-box;
   border-radius: 10px;
-  height: 400px;
 }
 
 
