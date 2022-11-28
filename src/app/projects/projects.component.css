@@ -13,8 +13,7 @@
 }
 
 h1{
-  align-self: flex-start;
-  margin-left: 50px;
+  align-self: center;
   margin-top: 80px;
   color: white;
 }
